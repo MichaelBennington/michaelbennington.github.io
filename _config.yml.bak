@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Michael_formal.jpg"
   name             : "Michael Bennington"
   pronouns         : he/him # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
@@ -32,9 +32,9 @@ author:
 
   # Academic websites
   biorxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=2opwyq4AAAAJ"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0001-7940-6297"
   researchgate     : "https://www.researchgate.net/profile/Michael_Bennington"
   
   # Repositories and software development
