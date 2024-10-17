@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Michael Bennington"
+title                    : "Michael J. Bennington"
 title_separator          : ""
-name                     : &name "Michael Bennington"
+name                     : &name "Michael J. Bennington"
 description              : &description "Researcher in neuromechanics and soft materials modeling."
 url                      : https://michaelbennington.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -22,13 +22,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "Michael_formal.jpg"
-  name             : "Michael Bennington"
+  name             : "Michael J. Bennington"
   pronouns         : he/him # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Researcher in neuromechanics and soft materials modeling."
   location         : "Pittsburgh, PA, USA"
   employer         : "Carnegie Mellon University"
   uri              : # URL
-  email            : "mbenning at andrew dot cmu dot" 
+  email            : "mbenning@andrew.cmu.edu" 
 
   # Academic websites
   biorxiv            : # URL - Update with the correct link to your profile
@@ -54,7 +54,7 @@ publication_category:
   manuscripts:
     title: 'Journal Articles'    
   conferences:
-    title: 'Conference Papers'
+    title: 'Peer-Reviewed Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
