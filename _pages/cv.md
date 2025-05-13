@@ -18,6 +18,7 @@ Awards and Fellowships
 ======
 * Graduate Research Fellowship, National Science Foundation
 * G. Sundback Graduate Fellowship, Carnegie Mellon University, College of Engineering
+* Presidential Fellowship, Carnegie Mellon University, College of Engineering
 
 Research experience
 ======
