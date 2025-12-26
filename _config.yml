@@ -15,7 +15,7 @@ description              : &description "Researcher in neuromechanics and soft m
 url                      : https://michaelbennington.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
-site_theme               : "custom"
+# site_theme               : "custom"
 
 # #Use Minimal Mistakes via remote theme
 # remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -26,8 +26,8 @@ site_theme               : "custom"
 #   - jekyll-paginate
 #   - jekyll-include-cache
 
-# Minimal Mistakes settings (optional)
-minimal_mistakes_skin: default
+# # Minimal Mistakes settings (optional)
+# minimal_mistakes_skin: default
 
 # Make sure Markdown/encoding look sane
 markdown: kramdown

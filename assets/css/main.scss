@@ -8,44 +8,42 @@
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
-@import
-    "vendor/breakpoint/breakpoint",
+// @import
+//     "vendor/breakpoint/breakpoint",
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+//     "themes",
+//     // "theme/{{site.site_theme | default: 'default'}}",
+//     // "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+//     // "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
-    "include/mixins",
-    "vendor/susy/susy",
+//     "include/mixins",
+//     "vendor/susy/susy",
 
-    "layout/reset",
-    "layout/base",
+//     "layout/reset",
+//     "layout/base",
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
+//     "include/utilities",
+//     "layout/tables",
+//     "layout/buttons",
+//     "layout/notices",
+//     "layout/masthead",
+//     "layout/navigation",
+//     "layout/footer",
+//     "syntax",
+//     "variables",
 
-    "layout/forms",
+//     "layout/forms",
 
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
+//     "layout/page",
+//     "layout/archive",
+//     "layout/sidebar",
+//     "layout/json_cv",
 
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+//     "vendor/font-awesome/fontawesome",
+//     "vendor/font-awesome/solid",
+//     "vendor/font-awesome/brands"
+// ;
 
-
-
----
----
 
 /*
  * Dark theme overrides for AcademicPages (Minimal Mistakes)
@@ -58,130 +56,130 @@
 
  
 
-// /* 1) Set SCSS variables BEFORE importing the theme */
-// $background-color: #121212;
-// $text-color: #f0f0f0;
+/* 1) Set SCSS variables BEFORE importing the theme */
+$background-color: #121212;
+$text-color: #f0f0f0;
 
-// /* Optional: pick a link color that works on dark background.
-//    You can change or remove this if you want default link styling. */
-// $link-color: #00c853; /* soft light-blue for good contrast */
+/* Optional: pick a link color that works on dark background.
+   You can change or remove this if you want default link styling. */
+$link-color: #00c853; /* soft light-blue for good contrast */
 
-// // If you decide to also unify header/footer, uncomment and adjust:
-// $header-background-color: #121212;
-// $header-text-color: #f0f0f0;
-// $footer-background-color: #121212;
-// $footer-text-color: #f0f0f0;
-
-
-// // If you want header/footer hard overrides, uncomment:
-// .site-footer {
-//   background-color: #121212;
-//   color: #f0f0f0;
-// }
+// If you decide to also unify header/footer, uncomment and adjust:
+$header-background-color: #121212;
+$header-text-color: #f0f0f0;
+$footer-background-color: #121212;
+$footer-text-color: #f0f0f0;
 
 
-// .site-header {
-//   position: fixed;           /* stays at top */
-//   top: 0;
-//   width: 100%;
-//   z-index: 1000;             /* above all content */
-//   background-color: #121212; /* same as page background */
-//   color: #f0f0f0;
-//   opacity: 1;                /* ensure it's fully opaque */
-// }
+// If you want header/footer hard overrides, uncomment:
+.site-footer {
+  background-color: #121212;
+  color: #f0f0f0;
+}
 
 
-// .page__content {
-//   padding-top: 70px; /* adjust based on header height */
-// }
+.site-header {
+  position: fixed;           /* stays at top */
+  top: 0;
+  width: 100%;
+  z-index: 1000;             /* above all content */
+  background-color: #121212; /* same as page background */
+  color: #f0f0f0;
+  opacity: 1;                /* ensure it's fully opaque */
+}
 
 
-// .site-header a,
-// .site-footer a {
-//   color: $link-color;
-//   text-decoration: none;
-// }
+.page__content {
+  padding-top: 70px; /* adjust based on header height */
+}
 
 
-// @import "vendor/breakpoint/breakpoint"; // media query mixins
-// @import "variables";
-// @import "mixins";
-// @import "vendor/susy/susy";
-
-// @import "reset";
-// @import "base";
-
-// @import "utilities";
-// @import "animations";
-// @import "tables";
-// @import "buttons";
-// @import "notices";
-// @import "masthead";
-// @import "navigation";
-// @import "footer";
-// @import "syntax";
-
-// @import "forms";
-
-// @import "page";
-// @import "archive";
-// @import "sidebar";
-
-// @import "vendor/font-awesome/fontawesome";
-// @import "vendor/font-awesome/solid";
-// @import "vendor/font-awesome/brands";
-// @import "vendor/magnific-popup/magnific-popup";
-// @import "print";
+.site-header a,
+.site-footer a {
+  color: $link-color;
+  text-decoration: none;
+}
 
 
-// /* 3) Fallback hard overrides (in case a skin or global rule persists) */
-// body {
-//   background-color: $background-color;
-//   color: $text-color;
-// }
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "include/mixins";
+@import "vendor/susy/susy";
 
-// a {
-//   color: $link-color;
-//   text-decoration: none; /* remove underline globally if desired */
-// }
+@import "layout/reset";
+@import "layout/base";
+
+@import "include/utilities";
+@import "animations";
+@import "layout/tables";
+@import "layout/buttons";
+@import "layout/notices";
+@import "layout/masthead";
+@import "layout/navigation";
+@import "layout/footer";
+@import "syntax";
+
+@import "layout/forms";
+
+@import "layout/page";
+@import "layout/archive";
+@import "layout/sidebar";
+
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
 
 
+/* 3) Fallback hard overrides (in case a skin or global rule persists) */
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
 
-// /* Override global colors */
-// body {
-//   background-color: #121212;  /* your background color */
-//   color: #f0f0f0;            /* your text color */
-// }
-
-// /* Optional: override link colors */
-// a {
-//   color: #00c853;            /* link color */
-// }
+a {
+  color: $link-color;
+  text-decoration: none; /* remove underline globally if desired */
+}
 
 
 
-// /* Header background and text */
-// .site-header {
-//   background-color: #121212;   /* your header background */
-//   color: #f0f0f0;             /* header text color */
-// }
+/* Override global colors */
+body {
+  background-color: #121212;  /* your background color */
+  color: #f0f0f0;            /* your text color */
+}
 
-// /* Header links */
-// .site-header a {
-//   color: #f0f0f0;             /* header link color */
-//   text-decoration: none;      /* remove underline if needed */
-// }
+/* Optional: override link colors */
+a {
+  color: #00c853;            /* link color */
+}
 
-// /* Footer background and text */
-// .site-footer {
-//   background-color: #121212;   /* your footer background */
-//   color: #f0f0f0;             /* footer text color */
-// }
 
-// /* Footer links */
-// .site-footer a {
-//   color: #f0f0f0;
-//   text-decoration: none;
-// }
+
+/* Header background and text */
+.site-header {
+  background-color: #121212;   /* your header background */
+  color: #f0f0f0;             /* header text color */
+}
+
+/* Header links */
+.site-header a {
+  color: #f0f0f0;             /* header link color */
+  text-decoration: none;      /* remove underline if needed */
+}
+
+/* Footer background and text */
+.site-footer {
+  background-color: #121212;   /* your footer background */
+  color: #f0f0f0;             /* footer text color */
+}
+
+/* Footer links */
+.site-footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
 
 

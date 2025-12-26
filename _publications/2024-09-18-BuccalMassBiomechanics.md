@@ -9,6 +9,7 @@ venue: 'Biological Cybernetics'
 slidesurl: ''
 paperurl: 'http://michaelbennington.github.io/files/BuccalMassBiomechanics.pdf'
 citation: '<b>Bennington, M. J.</b>, et al. &quot;Incorporating buccal mass planar mechanics and anatomical features improves neuromechanical modeling of <i>Aplysia</i> feeding behavior.&quot; <i>Biol. Cybern.</i>. https://link.springer.com/article/10.1007/s00422-025-01017-1 '
+image: 'files/graphical abstracts/bennington_2025_biolcybern.png'
 ---
 <b> M. J. Bennington</b><SUP>1</SUP>, A. S. Liao<SUP>1</SUP>, R. Sukhnandan<SUP>1</SUP>, B. Kundu<SUP>5,6</SUP>, S. M. Rogers<SUP>5</SUP>, J. P. Gill<SUP>7</SUP>, J. M. McManus<SUP>7</SUP>, G. P. Sutton<SUP>5</SUP>, H. J. Chiel<SUP>7,8,9</SUP>, V. A. Webster-Wood<SUP>1,2,3,4</SUP>
 
