@@ -15,6 +15,24 @@ description              : &description "Researcher in neuromechanics and soft m
 url                      : https://michaelbennington.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
+site_theme               : "custom"
+
+# #Use Minimal Mistakes via remote theme
+# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# # Required for GitHub Pages when using remote_theme
+# plugins:
+#   - jekyll-remote-theme
+#   - jekyll-paginate
+#   - jekyll-include-cache
+
+# Minimal Mistakes settings (optional)
+minimal_mistakes_skin: default
+
+# Make sure Markdown/encoding look sane
+markdown: kramdown
+highlighter: rouge
+
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -51,12 +69,15 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  manuscripts:
+  journal:
     title: 'Journal Articles'    
-  conferences:
+  conference:
     title: 'Peer-Reviewed Conference Papers'
   abstracts:
     title: 'Posters and Abstracts'
+
+# for author formating on the publications page
+my_name: "Michael J. Bennington"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

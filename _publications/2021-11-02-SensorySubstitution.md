@@ -1,7 +1,7 @@
 ---
 title: "Sensory Substitution for Tactile Feedback in Upper Limb Prostheses"
 collection: publications
-category: conferences
+category: conference
 permalink: /publication/SensorySubstitution
 excerpt: 'A prototype sensory substitution device is described and characterized for tactile feedback in upper limb prostheses.'
 date: 2021-11-01

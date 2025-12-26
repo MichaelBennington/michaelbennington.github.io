@@ -1,14 +1,14 @@
 ---
-title: "Incorporating buccal mass planar mechanics and anatomical features improves neuromechanical modeling of <i>Aplysia</i> feeding behavior (<i>submitted</i>)"
+title: "Incorporating buccal mass planar mechanics and anatomical features improves neuromechanical modeling of <i>Aplysia</i> feeding behavior"
 collection: publications
-category: manuscripts
+category: journal
 permalink: /publication/BuccalMassBiomechanics
 excerpt: 'A system neuromechanical model of the <i>Aplysia californica</i> feeding system incorporating a planar, rigid-body biomechanical model.'
-date: 2024-09-18
-venue: 'bioRxiv'
+date: 2025-07-07
+venue: 'Biological Cybernetics'
 slidesurl: ''
 paperurl: 'http://michaelbennington.github.io/files/BuccalMassBiomechanics.pdf'
-citation: '<b>Bennington, M. J.</b>, et al. &quot;Incorporating buccal mass planar mechanics and anatomical features improves neuromechanical modeling of <i>Aplysia</i> feeding behavior.&quot; <i>Submitted</i>. https://doi.org/10.1101/2024.09.17.613591 '
+citation: '<b>Bennington, M. J.</b>, et al. &quot;Incorporating buccal mass planar mechanics and anatomical features improves neuromechanical modeling of <i>Aplysia</i> feeding behavior.&quot; <i>Biol. Cybern.</i>. https://link.springer.com/article/10.1007/s00422-025-01017-1 '
 ---
 <b> M. J. Bennington</b><SUP>1</SUP>, A. S. Liao<SUP>1</SUP>, R. Sukhnandan<SUP>1</SUP>, B. Kundu<SUP>5,6</SUP>, S. M. Rogers<SUP>5</SUP>, J. P. Gill<SUP>7</SUP>, J. M. McManus<SUP>7</SUP>, G. P. Sutton<SUP>5</SUP>, H. J. Chiel<SUP>7,8,9</SUP>, V. A. Webster-Wood<SUP>1,2,3,4</SUP>
 

@@ -19,7 +19,152 @@ author_profile: true
 
 {% include base_path %}
 
+
+
+{% assign pubs = site.publications | sort: "date" | reverse %}
+
+{% comment %}
+Group by the first category (or 'uncategorized' if none)
+{% endcomment %}
+{% assign groups = pubs | group_by_exp: "pub", "pub.categories | first | default: 'uncategorized'" %}
+
+{% assign category_order = "journal,conference,workshop,preprint,book,thesis,uncategorized" | split: "," %}
+{% assign ordered_groups = "" | split: "" %}
+{% for wanted in category_order %}
+  {% for g in groups %}
+    {% if g.name == wanted %}
+      {% assign ordered_groups = ordered_groups | push: g %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% for g in groups %}
+  {% unless category_order contains g.name %}
+    {% assign ordered_groups = ordered_groups | push: g %}
+  {% endunless %}
+{% endfor %}
+
+{% for group in ordered_groups %}
+  
+  {% assign label = site.data.paper_categories[group.name] | default: group.name | capitalize %}
+
+  <h2 class="pub-section-heading">
+    {{ label }}
+    <!-- <span class="pub-section-count">({{ group.items | size }})</span> -->
+  </h2>
+
+  <div class="pub-grid">
+    {% for pub in group.items %}
+      <a class="pub-card" href="{{ pub.url | default: pub.url | relative_url }}">
+        <div class="pub-card-image">
+          {% if pub.image %}
+            <img src="{{ pub.image | relative_url }}" alt="{{ pub.title | escape }}">
+          {% else %}
+            <div class="pub-card-placeholder">No image</div>
+          {% endif %}
+        </div>
+        <div class="pub-card-body">
+          <h3 class="pub-card-title">{{ pub.title }}</h3>
+          {% if pub.venue %}
+            <div class="pub-card-meta">{{ pub.venue }}{% if pub.date %} · {{ pub.date | date: "%Y" }}{% endif %}</div>
+          {% endif %}
+
+          {% if pub.excerpt %}
+            <p class="pub-card-text">{{ pub.excerpt }}</p>
+          {% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endfor %}
+
+
+<style>
+/* Responsive grid */
+.pub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+
+/* Card */
+.pub-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+  border: 1px solid #e3e6e8;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #121212;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+  color: inherit;
+}
+.pub-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+/* Image area */
+.pub-card-image {
+  aspect-ratio: 16 / 9; /* keeps a consistent panel shape */
+  background: #f5f7fa;
+}
+.pub-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pub-card-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #9aa4af;
+  font-size: 0.9rem;
+}
+
+/* Body */
+.pub-card-body {
+  padding: 12px 14px 14px;
+}
+.pub-card-title {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+
+.pub-card a,
+.pub-card a:link,
+.pub-card a:visited {
+  text-decoration: none !important;   /* remove native underline */
+  border-bottom: none !important;     /* remove border-bottom underline styles */
+  box-shadow: none !important;        /* remove inset/shadow-based underline styles */
+  color: inherit;                     /* keep text color consistent */
+}
+
+
+/* b0 */
+.pub-card-meta {
+  color: #9c27b0; 
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  text-decoration: none !important;
+}
+.pub-card-text {
+  color: #F0F0F0;
+  font-size: 0.95rem;
+  margin: 0;
+  text-decoration: none !important;
+}
+</style>
+
+
 <!-- New style rendering if publication categories are defined -->
+<!-- 
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
@@ -39,6 +184,5 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
-
+ -->
 

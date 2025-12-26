@@ -1,7 +1,7 @@
 ---
 title: "Synthetic Nervous System Control of a Bioinspired Soft Grasper for Pick-and-Place Manipulation"
 collection: publications
-category: conferences
+category: conference
 permalink: /publication/SNSSoftGripper
 excerpt: 'A bioinspired neural model controls a soft robotic gripper for pick-and-place tasks.'
 date: 2023-08-01

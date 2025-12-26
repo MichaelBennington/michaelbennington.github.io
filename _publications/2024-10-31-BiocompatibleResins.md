@@ -1,7 +1,7 @@
 ---
 title: "Cytotoxicity and Characterization of 3D-Printable Resins Using a Low-Cost Printer for Muscle-based Biohybrid Devices (<i>submitted</i>)"
 collection: publications
-category: manuscripts
+category: journal
 permalink: /publication/BiocompatibleResins
 excerpt: 'Identification of biocompatible SLA printable materials for use in bio-hybrid robotics. Material properties of many commercially available SLA printable resins are affected by sterilization and physiologically relevant conditions.'
 date: 2024-10-31

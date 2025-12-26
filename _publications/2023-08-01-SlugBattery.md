@@ -1,7 +1,7 @@
 ---
 title: "Slug Battery: An Enzymatic Fuel Cell Tested <i>in vitro</i> in <i>Aplysia californica</i> Hemolymph"
 collection: publications
-category: conferences
+category: conference
 permalink: /publication/SlugBattery
 excerpt: 'An biobattery powered by <i>Aplysia californica</i> hemolymph.'
 date: 2023-08-01

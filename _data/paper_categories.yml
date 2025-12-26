@@ -1,0 +1,10 @@
+
+# _data/paper_categories.yml
+journal: "Journal Articles"
+conference: "Peer Reviewed Conference Papers"
+abstracts: "Conference Abstracts and Posters"
+workshop: "Workshop Papers"
+preprint: "Preprints"
+book: "Books & Chapters"
+thesis: "Theses"
+uncategorized: "Other"

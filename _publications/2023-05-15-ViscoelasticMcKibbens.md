@@ -1,7 +1,7 @@
 ---
 title: "Design and Characterization of Viscoelastic McKibben Actuators with Tunable Force-Velocity Curves"
 collection: publications
-category: conferences
+category: conference
 permalink: /publication/ViscoelasticMcKibben
 excerpt: 'The dynamical properties of McKibben artificial muscles are augmented using viscoelastic material sheaths.'
 date: 2023-05-15
