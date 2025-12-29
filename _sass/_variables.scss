@@ -72,13 +72,13 @@ $border-color               : $lighter-gray;
 $primary-color              : #7a8288;
 */
 
-$body-color                 : #252a34;
-$background-color           : #252a34;
+$body-color                 : #121212;
+$background-color           : #121212;
 $code-background-color      : mix(#000, $background-color, 15%);
 $code-background-color-dark : mix(#000, $background-color, 20%);
-$text-color                 : #eaeaea;
+$text-color                 : #f0f0f0;
 $border-color               : mix(#fff, $background-color, 20%);
-$primary-color              : #8cd2d5;
+$primary-color              : #f0f0f0;
 
 $success-color              : #62c462;
 $warning-color              : #f89406;

@@ -1,5 +1,6 @@
 
 # _data/paper_categories.yml
+featured: "Featured Journal Articles"
 journal: "Journal Articles"
 conference: "Peer Reviewed Conference Papers"
 abstracts: "Conference Abstracts and Posters"

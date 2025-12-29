@@ -5,12 +5,150 @@ permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+<!-- {% if site.talkmap_link == true %}
 
 <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
 
-{% endif %}
+{% endif %} -->
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+
+
+
+{% assign talk_events = site.talks | sort: "date" | reverse %}
+
+{% comment %}
+Group by the first category (or 'uncategorized' if none)
+{% endcomment %}
+{% assign groups = talk_events | group_by_exp: "talk", "talk.categories | first | default: 'uncategorized'" %}
+
+{% assign category_order = "talk,conference,poster,co-author-poster,uncategorized" | split: "," %}
+{% assign ordered_groups = "" | split: "" %}
+{% for wanted in category_order %}
+  {% for g in groups %}
+    {% if g.name == wanted %}
+      {% assign ordered_groups = ordered_groups | push: g %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
+{% for g in groups %}
+  {% unless category_order contains g.name %}
+    {% assign ordered_groups = ordered_groups | push: g %}
+  {% endunless %}
+{% endfor %}
+
+<div class="talks-collapsible">
+  {% for group in ordered_groups %}
+    {% assign label = site.data.talk_categories[group.name] | default: group.name | capitalize %}
+    <details class="talks-category" {% if default_open contains group.name %}open{% endif %} id="cat-{{ group.name | slugify }}">
+      <summary class="talks-summary">
+        {{ label }}
+      </summary>
+
+      <ul class="talks-list">
+        {% for talk in group.items %}
+          <li class="talk-item">
+            <strong>{{ talk.title }}</strong>
+            {% if talk.event %} — {{ talk.event }}{% endif %}
+            {% if talk.location %} — {{ talk.location }}{% endif %}
+            {% if talk.date %}
+              <span class="talk-date"> ({{ talk.date | date: "%B %d, %Y" }})</span>
+            {% endif %}
+            {% if talk.url %}
+              — <a href="{{ talk.url | relative_url }}">details</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </details>
+  {% endfor %}
+</div>
+
+
+
+<style>
+/* ===== Talks: Collapsible Categories (page-scoped) ===== */
+/* Scope to this page only to avoid bleeding into other layouts */
+.talks-collapsible {
+  margin-top: 0.5rem;
+}
+
+/* Each collapsible category block */
+.talks-collapsible .talks-category {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  background: var(--mm-body-bg, #fff);
+  overflow: hidden;
+}
+
+/* Summary (clickable header) */
+.talks-collapsible .talks-summary {
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  /* In case theme applies link/underline styles */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Count text to the right */
+.talks-collapsible .talks-count {
+  color: #6b7280;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+/* Native marker behavior is accessible; leave defaults.
+   For Safari/WebKit you can hide marker and use a custom arrow if desired:
+   .talks-summary::-webkit-details-marker { display: none; } */
+
+/* Optional: custom arrow that rotates on open */
+.talks-collapsible .talks-summary::after {
+  content: "▸";
+  transition: transform 0.2s ease;
+  margin-left: 0.5rem;
+}
+.talks-collapsible .talks-category[open] .talks-summary::after {
+  transform: rotate(90deg);
+}
+
+/* List inside the collapsible content */
+.talks-collapsible .talks-list {
+  list-style: none;
+  padding: 0.25rem 1rem 0.9rem;
+  margin: 0;
+}
+.talks-collapsible .talk-item {
+  margin: 0.35rem 0;
+}
+.talks-collapsible .talk-date {
+  color: #6b7280;
+}
+
+/* --- Optional: match Minimal Mistakes dark mode better --- */
+@media (prefers-color-scheme: dark) {
+  .talks-collapsible .talks-category {
+    border-color: #2e2e2e;
+    background: #1a1a1a;
+  }
+  .talks-collapsible .talks-summary {
+    color: #e5e7eb;
+  }
+  .talks-collapsible .talks-count,
+  .talks-collapsible .talk-date {
+    color: #9aa4af;
+  }
+}
+
+/* --- Optional: reduce container padding if the page feels narrow --- */
+/* Uncomment as needed:
+.page__content,
+.archive {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+*/
+</style>

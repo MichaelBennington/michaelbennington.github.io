@@ -90,15 +90,15 @@ $footer-text-color: #f0f0f0;
 
 
 .page__content {
-  padding-top: 70px; /* adjust based on header height */
+  padding-top: 30px; /* adjust based on header height */
 }
-
 
 .site-header a,
 .site-footer a {
   color: $link-color;
   text-decoration: none;
 }
+
 
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
@@ -144,12 +144,11 @@ a {
 }
 
 
-
-/* Override global colors */
-body {
-  background-color: #121212;  /* your background color */
-  color: #f0f0f0;            /* your text color */
-}
+// /* Override global colors */
+// body {
+//   background-color: #121212;  /* your background color */
+//   color: #f0f0f0;            /* your text color */
+// }
 
 /* Optional: override link colors */
 a {
@@ -182,4 +181,25 @@ a {
   text-decoration: none;
 }
 
+
+
+/* Page image (centered, responsive) */
+.pub-page-image {
+  margin: 18px auto;      /* vertical spacing */
+  text-align: center;     /* center contents */
+}
+.pub-page-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: inline-block;  /* allows text-align center to work on the wrapper */
+}
+
+
+.pub-page-meta {
+  margin-bottom: 2px;
+}
+.pub-page-authors {
+  margin-top: 2px;
+}
 

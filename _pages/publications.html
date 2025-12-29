@@ -6,7 +6,8 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>. All first authors and co-first authors are listed in the recommended citation. For a full list of authors, see the publication page.</div>
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>. All first authors and co-first authors are listed in the recommended citation. For a full list of authors, or to download a paper, click on the publication's card.
+  </div>
 {% endif %}
 
 <div>
@@ -15,6 +16,10 @@ author_profile: true
 
 <div>
 <u>UNDERLINE</u>: Students mentored by MJB
+</div>
+
+<div>
+First author (and co-first author) publications are indicated with an asterik.
 </div>
 
 {% include base_path %}
@@ -28,7 +33,7 @@ Group by the first category (or 'uncategorized' if none)
 {% endcomment %}
 {% assign groups = pubs | group_by_exp: "pub", "pub.categories | first | default: 'uncategorized'" %}
 
-{% assign category_order = "journal,conference,workshop,preprint,book,thesis,uncategorized" | split: "," %}
+{% assign category_order = "featured,journal,conference,workshop,preprint,book,thesis,uncategorized" | split: "," %}
 {% assign ordered_groups = "" | split: "" %}
 {% for wanted in category_order %}
   {% for g in groups %}
@@ -65,7 +70,7 @@ Group by the first category (or 'uncategorized' if none)
         <div class="pub-card-body">
           <h3 class="pub-card-title">{{ pub.title }}</h3>
           {% if pub.venue %}
-            <div class="pub-card-meta">{{ pub.venue }}{% if pub.date %} · {{ pub.date | date: "%Y" }}{% endif %}</div>
+            <div class="pub-card-meta"><i>{{ pub.venue }}</i>{% if pub.date %} · {{ pub.date | date: "%Y" }}{% endif %}</div>
           {% endif %}
 
           {% if pub.excerpt %}
@@ -105,16 +110,23 @@ Group by the first category (or 'uncategorized' if none)
   transform: translateY(-2px);
 }
 
-/* Image area */
+
+/* Image container keeps a consistent shape */
 .pub-card-image {
-  aspect-ratio: 16 / 9; /* keeps a consistent panel shape */
-  background: #f5f7fa;
+  aspect-ratio: 16 / 9;         /* or 1 / 1 for square panels */
+  background: #f5f7fa;          /* backdrop for letterboxing on dark theme */
+  display: block;
+  overflow: hidden;
 }
+
+/* Scale image so the longest side fits; no cropping */
 .pub-card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;           /* key: show entire image */
+  object-position: center;       /* center it within the box */
 }
+
 .pub-card-placeholder {
   display: flex;
   align-items: center;
@@ -126,7 +138,7 @@ Group by the first category (or 'uncategorized' if none)
 
 /* Body */
 .pub-card-body {
-  padding: 12px 14px 14px;
+  padding: 6px 6px 14px;
 }
 .pub-card-title {
   margin: 0 0 6px;
@@ -152,7 +164,7 @@ Group by the first category (or 'uncategorized' if none)
   color: #9c27b0; 
   font-size: 0.9rem;
   margin-bottom: 6px;
-  text-decoration: none !important;
+  text-decoration: italic;
 }
 .pub-card-text {
   color: #F0F0F0;

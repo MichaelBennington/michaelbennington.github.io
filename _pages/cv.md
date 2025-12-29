@@ -1,80 +1,103 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: "Curriculum Vitae"
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
 ---
 
-{% include base_path %}
+<div class="cv-box">
+  <div class="cv-box__header">
+    <h2 class="cv-box__title">Curriculum Vitae</h2>
 
-Education
-======
-* Ph.D Mechanical Engineering, Carnegie Mellon University, Expected 2026
-* B.S. Bioengineering: Bioengineering, University of California, San Diego 2017-2021
+    <!-- Corrected Download Button -->
+    <a
+      class="cv-download btn"
+      href="{{ '/files/Michael Bennington - CV.pdf' | relative_url }}"
+      download
+      target="_blank"
+      rel="noopener"
+    >
+      Download PDF
+    </a>
+  </div>
 
-Awards and Fellowships
-======
-* Graduate Research Fellowship, National Science Foundation
-* G. Sundback Graduate Fellowship, Carnegie Mellon University, College of Engineering
-* Presidential Fellowship, Carnegie Mellon University, College of Engineering
+  <div class="cv-box__viewer">
+    <!-- Primary: iframe points to the PDF (NOT /cv/) -->
+    <iframe
+      src="{{ '/files/Michael Bennington - CV.pdf' | relative_url }}"
+      width="100%"
+      height="800"
+      style="border: none;"
+      title="CV PDF"
+    ></iframe>
 
-Research experience
-======
-* Aug 2021- : Graduate Student Researcher
-  * Biohybrid and Organic Robotics Group (BORG) - Carnegie Mellon University
-  * Advisor: Dr. Victoria A. Webster-Wood
-  * Investigating the role of soft body interactions and musculostructural reconfiguration in the control of Aplysia californica feeding using combinations of in vivo behavioral experiments, muscle lesion studies, and computational neuromechanical models
-  * Developing modular neuromechanical models of Aplysia californica for the development of hypotheses related to adaptive feeding and for comparing different degrees of model complexity
-  * Designing and characterizing soft robotic actuators and systems for use as in roboto platforms to study neuromechanics of Aplysia feeding
-  * Characterization and modeling of soft polymeric materials for use in bioinspired robotic actuators and platforms
-  
-* May 2019 - Aug 2021: Undergraduate Research Assistance
-  * Daniela Valdez-Jasso Lab (DVJ Lab) - University of California, San Diego
-  * Advisor: Dr. Daniela Valdez-Jasso
-  * Performed biaxial mechanical testing on rat right ventricle myocardium and extracellular matrix to determine mechanical changes associated with pulmonary arterial hypertension
-  * Developed pseudoelastic constitutive models of the right ventricle myocardium and tools to assist in mechanical analysis
-  * Developed image analysis tools for studying microstructural properties of pulmonary vessels from multiphoton microscopy images
-  
-  
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+    <!-- Fallback: object
+    <object
+      data="{{ '/files/Michael Bennington - CV.pdf' | relative_url }}"
+      type="application/pdf"
+      width="100%"
+      height="900"
+    >
+      <p>
+        Your browser can’t display PDFs inline.
+        <a href="{{ '/files/Michael Bennington - CV.pdf' | relative_url }}" download>Download the CV</a>.
+      </p>
+    </object> -->
+  </div>
+</div>
 
-Publications
-======
-**Bold**: self
+<style>
+/* === CV box styles (scoped; won’t touch global layout) === */
+.cv-box {
+  background: #121212;        /* to match your publication card background */
+  color: #F0F0F0;
+  border: 1px solid #e3e6e8;  /* matches your card border tone */
+  border-radius: 12px;
+  padding: 12px 14px 14px;    /* same as .pub-card-body */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
 
-<u>Underline</u>: mentored by MJB
+/* Header row */
+.cv-box__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.cv-box__title {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
 
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-  
-Mentorship
-======
-  
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+/* Button styling in your accent color */
+.cv-download.btn {
+  background-color: #9c27b0;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  display: inline-block;
+}
+.cv-download.btn:hover { background-color: #7b1fa2; }
+
+/* Viewer box */
+.cv-box__viewer {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+/* IMPORTANT: Do NOT force full-width page containers here.
+   Let the theme manage the content column and sidebar sizes. */
+
+/* Responsive height tweak (optional) */
+@media (max-width: 768px) {
+  .cv-box__viewer iframe,
+  .cv-box__viewer object {
+    height: 70vh;
+  }
+}
+</style>
