@@ -5,8 +5,48 @@ permalink: /teaching/
 author_profile: true
 ---
 
+
+
+{% assign teaches = site.teaching | sort: "date" | reverse %}
+
+{% comment %}
+Group by the first category (or 'uncategorized' if none)
+{% endcomment %}
+{% assign groups = teaches | group_by_exp: "teach", "teach.categories | first | default: 'uncategorized'" %}
+
+{% assign category_order = "course,guest_lecture,TA,uncategorized" | split: "," %}
+{% assign ordered_groups = "" | split: "" %}
+{% for wanted in category_order %}
+  {% for g in groups %}
+    {% if g.name == wanted %}
+      {% assign ordered_groups = ordered_groups | push: g %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% for g in groups %}
+  {% unless category_order contains g.name %}
+    {% assign ordered_groups = ordered_groups | push: g %}
+  {% endunless %}
+{% endfor %}
+
+{% for group in ordered_groups %}
+  
+  {% assign label = site.data.teaching_categories[group.name] | default: group.name | capitalize %}
+
+  <h2 class="pub-section-heading">
+    {{ label }}
+    <!-- <span class="pub-section-count">({{ group.items | size }})</span> -->
+  </h2>
+
+  {% for post in group.items %}
+    {% include archive-single.html %}
+  {% endfor %}
+
+{%endfor%}
+<!-- 
+
 {% include base_path %}
 
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
-{% endfor %}
+{% endfor %} -->
