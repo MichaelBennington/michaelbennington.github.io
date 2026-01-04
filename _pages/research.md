@@ -10,7 +10,11 @@ author_profile: true
   <div class="thrust-text">
     <div class="thrust-title">Overview</div>
     <p>
-      
+      My research interests lie at the intersection of physics, biology, and computational modeling. I seek to understand how the physics of biological systems and materials impact their behavior and how we can develop simulation tools to capture this interplay.
+    </p>
+
+    <p>
+      I believe strongly in the interplay between experimentation and modeling, using experiments to inform and calibrate models, and using models to explain and plan experiments. From my previous experiences, I have a strong basis in both experimental and computational research, and can serve as an intermediary between these two groups. 
     </p>
   </div>
 </div>
@@ -23,8 +27,16 @@ author_profile: true
   <div class="thrust-text">
     <div class="thrust-title">Population Modeling of Mechanical Systems</div>
     <p>
-      Variability is an inherent property of many real world systems. (something about where this variability manifests and why it is important to capture). By utilizing tools from computational statistics and Bayesian modeling, I aim to 
+      Variability is an inherent property of many real world systems and averaging out that variability across individual samples can hide important features of the larger population.
     </p>
+
+    <p>  
+      By utilizing tools from computational statistics and Bayesian modeling, I aim to create modeling frameworks, tools, and calibration methods for capturing the variability inherent in populations of mechanical and biological systems.
+    </p>
+
+    <p>  
+      These tools will be utilized in my other research thrusts to create plausible ensembles of models that 1) expose how variability in parameters of individual relates to variability in the behavior of populations, and 2) how and why the traits within populations are coupled. 
+    </p>    
   </div>
 </div>
 
@@ -40,11 +52,11 @@ author_profile: true
     </p>
 
     <p>
-      By combining advanced neuromechanical models, anatomical studies, and behavioral assays, I hope to uncover how animals acheive their diverse behaviors and what role the mechanical intelligence of their bodies play. 
+      By combining advanced neuromechanical models, anatomical studies, and behavioral assays, I aim to uncover how animals acheive their diverse behaviors and what role the mechanical intelligence of their bodies plays. 
     </p>
     
     <p>
-      I aim to combine these neuromechanical models with generative statistical tools to create simulations that can produce behaviors for many representative animals, allowing us to study variability in control across a population, rather that in an idealized "average" animal. 
+      These neuromechanical models, along with generative statistical tools, will create simulations for many representative animals, allowing us to study variability in control across a population, rather that in an idealized "average" animal. 
     </p>
     
     <p>  
@@ -61,7 +73,15 @@ author_profile: true
   <div class="thrust-text">
     <div class="thrust-title">Multi-physics of Biological Materials</div>
     <p>
-      
+      Biological materials, whether naturally occuring in tissues or engineered, are inherently multi-physics systems, with mechanics, chemistry, and biological phenomena interacting at multiple scales. By understanding these interactions, we can gain insights into the structure-function relationship in natural systems and design advanced bioengineering solutions.  
+    </p>
+
+    <p>
+      By combining techniques from continuum and stochastic modeling with 3D microscopy and mechanical experiments, I aim to probe the interconnection between these phenomena across scale.  
+    </p>
+
+    <p>
+      I am particularly interested in how these phenomena guide the growth and behavior of biological systems, and how computational models can be used as design tools for bioengineers.
     </p>
   </div>
 </div>
@@ -89,6 +109,7 @@ author_profile: true
   }
 
   .thrust img {
+    align-self: center;     /* centers this item on the flex cross-axis (vertical) */
     width: 350px;              /* Adjust as needed */
     height: auto;
     border-radius: 8px;         /* Soft corners */

@@ -101,6 +101,12 @@ $footer-text-color: #f0f0f0;
 
 
 
+
+// @import "themes",
+//     "theme/{{site.site_theme | default: 'default'}}",
+//     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+//     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}";
+    
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "include/mixins";
@@ -201,5 +207,56 @@ a {
 }
 .pub-page-authors {
   margin-top: 2px;
+}
+
+
+
+
+
+/* ===== Navigation dropdown color overrides ===== */
+
+/* Base variables you can tweak to match your scheme */
+$nav-bg:            #121212;  // overall nav background (if you want to match)
+$dropdown-bg:       #121212;  // dropdown panel background
+$dropdown-text:     #f0f0f0;  // dropdown link text
+$dropdown-hover-bg: #121212;  // dropdown link hover background
+$dropdown-hover-tx: #ffffff;  // dropdown link hover text
+$dropdown-border:   rgba(#ffffff, 0.08);
+
+/* Minimal Mistakes nav structure */
+.masthead, .greedy-nav {
+  background-color: $nav-bg;
+}
+
+/* Hidden links container used by greedy-nav on small screens */
+.greedy-nav .hidden-links {
+  background-color: $dropdown-bg;
+  border: 1px solid $dropdown-border;
+}
+
+/* Dropdown children list */
+.nav__list .dropdown .children {
+  background-color: $dropdown-bg;
+  border: 1px solid $dropdown-border;
+}
+
+/* Links inside the dropdown */
+.nav__list .dropdown .children a {
+  color: $dropdown-text;
+}
+
+/* Hover styles */
+.nav__list .dropdown .children a:hover {
+  background-color: $dropdown-hover-bg;
+  color: $dropdown-hover-tx;
+  text-decoration: none;
+}
+
+/* Optional: match visible top-level links to your scheme */
+.greedy-nav .visible-links a {
+  color: #f0f0f0;
+}
+.greedy-nav .visible-links a:hover {
+  color: #f0f0f0;
 }
 
