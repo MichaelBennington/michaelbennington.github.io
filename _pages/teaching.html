@@ -5,7 +5,9 @@ permalink: /teaching/
 author_profile: true
 ---
 
-
+<div>
+  I am passionate about teaching and providing students with hands-on experiences with mechanics, biology, and modeling. I am currently participating in the Future Faculty program hosted by the <a href="https://www.cmu.edu/teaching/graduatestudentsupport/futurefacultyprogram.html">CMU Eberly Center for Teaching Excellence & Educational Innovation</a>. I am also an active member and director for CMU's National Biomechanics Day chapter, where we put on workshops at CMU and in the local community to introduce high school students to biomechanics and bioengineering.
+</div>
 
 {% assign teaches = site.teaching | sort: "date" | reverse %}
 
@@ -29,6 +31,8 @@ Group by the first category (or 'uncategorized' if none)
   {% endunless %}
 {% endfor %}
 
+
+
 {% for group in ordered_groups %}
   
   {% assign label = site.data.teaching_categories[group.name] | default: group.name | capitalize %}
@@ -43,7 +47,7 @@ Group by the first category (or 'uncategorized' if none)
   {% endfor %}
 
 {%endfor%}
-<!-- 
+  <!-- 
 
 {% include base_path %}
 
