@@ -56,7 +56,7 @@ author_profile: true
     </p>
     
     <p>
-      These neuromechanical models, along with generative statistical tools, will create simulations for many representative animals, allowing us to study variability in control across a population, rather that in an idealized "average" animal. 
+      Using these neuromechanical models with generative statistical tools, I aim to create simulations for many representative animals, allowing us to study variability in control across a population and how populations of variable individuals interact. 
     </p>
     
     <p>  
