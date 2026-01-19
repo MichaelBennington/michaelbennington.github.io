@@ -11,12 +11,13 @@ layout: archive
 <div class="thrust">
   <div class="thrust-text">
     <p>
-      Hello and welcome! My name is Michael Bennington, and I am a current Mechanical Engineering PhD student in the <a href="https://engineering.cmu.edu/borg/index.html">Biohybrid and Organic Robotics Group</a> at Carnegie Mellon University. My current research focuses on the biomechanics and neural control of multifunctional feeding behaviors in the sea slug <i>Aplysia californica</i>. My work is supported by an NSF Graduate Research Fellowship and a Carnegie Mellon University Presidential Fellowship.
+      Hello and welcome! My name is Michael Bennington, and I am a current Mechanical Engineering PhD student in the <a href="https://engineering.cmu.edu/borg/index.html">Biohybrid and Organic Robotics Group</a> at Carnegie Mellon University. My current research focuses on the biomechanics and neural control of multifunctional feeding behaviors in the sea slug <i>Aplysia californica</i>. My work is supported in part by the NSF through a NeuroNex Network award. I have also supported my own research by receiving an NSF Graduate Research Fellowship and a Carnegie Mellon University Presidential Fellowship.
     </p>    
 
     <p>
       To learn about my broader research interests, check out my <a href="/research/">Research</a> page!
     </p>
+
   </div>
   
   <figure class="thrust-media">
@@ -28,8 +29,7 @@ layout: archive
 
 </div>
 
-
-<b>As I approach the end of my PhD program, I am looking for opportunities to continue my research career as a post-doctoral fellow or tenure track faculty member. </b> I am attending this year's Society for Integrative and Comparative Biology (SICB 2026) conference in Portland, OR. If you see me, feel free to say and we can chat about new research opportunities!
+<b>As I approach the end of my PhD program, I am looking for opportunities to continue my research career as a post-doctoral fellow or tenure track faculty member. </b>
 
 I graduated from the University of California, San Diego with a B.S. in Bioengineering. During my degree, I conducted research under the guidance of Dr. Daniela Valdez-Jasso. In the DVJ Lab, my work focused on the mechanical testing and constitutive model of the right ventricular myocardium and extracellular matrix in a rat model of pulmonary hypertension.
 
