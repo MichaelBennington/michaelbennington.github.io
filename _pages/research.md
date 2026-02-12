@@ -10,7 +10,7 @@ author_profile: true
   <div class="thrust-text">
     <div class="thrust-title">Overview</div>
     <p>
-      My research interests lie at the intersection of physics, biology, and computational modeling. I seek to understand how the physics of biological systems and materials impact their behavior and how we can develop simulation tools to capture this interplay.
+      How do the biology and physiology of tissue determine the mechanics of organisms? How do mechanical forces and interactions shape and constrain biological systems? My research interests lie at the intersection of physics, biology, and computational modeling. I seek to understand how the physics of biological systems and materials impact their behavior and how we can develop simulation tools to capture this interplay.
     </p>
 
     <p>
@@ -44,7 +44,7 @@ author_profile: true
 
 <!-- ===== Research Thrust 2 ===== -->
 <div class="thrust">
-  <img src="/files/research images/neuromech.png" alt="Comparative Neuromechanics">
+  <img src="/files/research images/neuromech.png" alt="Comparative Bio- and Neuromechanics">
   <div class="thrust-text">
     <div class="thrust-title">Comparative Neuromechanics</div>
     <p>
@@ -52,15 +52,15 @@ author_profile: true
     </p>
 
     <p>
-      By combining advanced neuromechanical models, anatomical studies, and behavioral assays, I aim to uncover how animals acheive their diverse behaviors and what role the mechanical intelligence of their bodies plays. 
+      By combining advanced bio- and neuromechanical models, anatomical studies, and behavioral assays, I aim to uncover how animals acheive their diverse behaviors and what role the mechanical intelligence of their bodies plays. 
     </p>
     
     <p>
-      Using these neuromechanical models with generative statistical tools, I aim to create simulations for many representative animals, allowing us to study variability in control across a population and how populations of variable individuals interact. 
+      Using these models with generative statistical tools, I aim to create simulations for many representative animals, allowing us to study variability in control across a population and how populations of variable individuals interact. 
     </p>
     
     <p>  
-      I am particularly focused on addressing these questions in soft bodies systems, from sea slugs to worms to tongues, but I am open to working with any animal that presents an interesting mechanical problem.
+      I am particularly focused on addressing these questions in soft bodies systems, from sea slugs to worms to tongues, but I am open to working with any animal or tissue type that presents an interesting mechanical problem.
     </p>
   </div>
 </div>
