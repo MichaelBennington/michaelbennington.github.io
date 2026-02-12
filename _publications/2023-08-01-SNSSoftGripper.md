@@ -8,7 +8,7 @@ date: 2023-08-01
 venue: 'Biomimetic and Biohybrid Systems (Living Machines 2023)'
 slidesurl: ''
 paperurl: 'http://michaelbennington.github.io/files/SNSSoftGripper.pdf'
-citation: 'Sukhnandan, R., Li, Y., et al. (2023). &quot;Synthetic Nervous System Control of a Bioinspired Soft Grasper for Pick-and-Place Manipulation.&quot; <i>In: Meder, F., Hunt, A., Margheri, L., Mura, A., Mazzolai, B. (eds) Biomimetic and Biohybrid Systems. Living Machines 2023.</i> Lecture Notes in Computer Science(), vol 14157. Springer, Cham. https://doi.org/10.1007/978-3-031-38857-6_23 '
+citation: 'Sukhnandan, R., Li, Y., et al. (2023). &quot;Synthetic Nervous System Control of a Bioinspired Soft Grasper for Pick-and-Place Manipulation.&quot; <i>In: Meder, F., Hunt, A., Margheri, L., Mura, A., Mazzolai, B. (eds) Biomimetic and Biohybrid Systems. Living Machines 2023.</i> Lecture Notes in Computer Science(), vol 14157. Springer, Cham. [doi: 10.1007/978-3-031-38857-6_23](https://doi.org/10.1007/978-3-031-38857-6_23).'
 image: '/files/graphical abstracts/SNS_grasper.png'
 
 ---

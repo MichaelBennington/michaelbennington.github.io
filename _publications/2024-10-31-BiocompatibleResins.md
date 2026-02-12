@@ -8,7 +8,7 @@ date: 2026-1-22
 venue: 'J. Biomech. Eng.'
 slidesurl: ''
 paperurl: 'http://michaelbennington.github.io/files/BiocompatibleResins.pdf'
-citation: 'Liao, A. S., et al. &quot;Cytotoxicity and Characterization of 3D-Printable Resins Using a Low-Cost Printer for Muscle-based Biohybrid Devices.&quot; <i>Accepted</i>. '
+citation: 'Liao, A. S., et al. &quot;Cytotoxicity and Characterization of 3D-Printable Resins Using a Low-Cost Printer for Muscle-based Biohybrid Devices.&quot; [doi: 10.1101/2024.10.31.621115](https://doi.org/10.1101/2024.10.31.621115).'
 image: '/files/graphical abstracts/resin_data.png'
 ---
 

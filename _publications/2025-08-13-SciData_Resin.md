@@ -8,7 +8,7 @@ date: 2025-08-13
 venue: 'Scientific Data'
 slidesurl: ''
 paperurl: 'http://michaelbennington.github.io/files/ResinData.pdf'
-citation: 'Liao, A. S., et al. &quot;Cytotoxic and Mechanical Properties of Resins 3D Printed with Low-Cost Hardware for C2C12 Biohybrid Actuators.&quot; <i>Sci. Data.</i>. https://www.nature.com/articles/s41597-025-05738-7 '
+citation: 'Liao, A. S., et al. &quot;Cytotoxic and Mechanical Properties of Resins 3D Printed with Low-Cost Hardware for C2C12 Biohybrid Actuators.&quot; <i>Sci. Data.</i>. [doi: 10.1038/s41597-025-05738-7](https://doi.org/10.1038/s41597-025-05738-7).'
 image: '/files/graphical abstracts/resin_data.png'
 ---
 

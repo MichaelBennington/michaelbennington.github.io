@@ -8,7 +8,7 @@ date: 2023-08-01
 venue: 'Biomimetic and Biohybrid Systems (Living Machines 2023)'
 slidesurl: ''
 paperurl: 'http://michaelbennington.github.io/files/SlugBattery.pdf'
-citation: '<u>Cockrell, T.</u>, et al. (2023). &quot;Slug Battery: An Enzymatic Fuel Cell Tested <i>in vitro</i> in <i>Aplysia californica</i> Hemolymph.&quot; <i>In: Meder, F., Hunt, A., Margheri, L., Mura, A., Mazzolai, B. (eds) Biomimetic and Biohybrid Systems. Living Machines 2023. Lecture Notes in Computer Science()</i>, vol 14158. Springer, Cham. https://doi.org/10.1007/978-3-031-39504-8_22 '
+citation: '<u>Cockrell, T.</u>, et al. (2023). &quot;Slug Battery: An Enzymatic Fuel Cell Tested <i>in vitro</i> in <i>Aplysia californica</i> Hemolymph.&quot; <i>In: Meder, F., Hunt, A., Margheri, L., Mura, A., Mazzolai, B. (eds) Biomimetic and Biohybrid Systems. Living Machines 2023. Lecture Notes in Computer Science()</i>, vol 14158. Springer, Cham. [doi: 10.1007/978-3-031-39504-8_22](https://doi.org/10.1007/978-3-031-39504-8_22).'
 image: '/files/graphical abstracts/slugbat.png'
 ---
 

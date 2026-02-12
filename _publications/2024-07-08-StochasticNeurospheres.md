@@ -8,7 +8,7 @@ date: 2024-07-08
 venue: 'Biomimetic and Biohybrid Systems (Living Machines 2024)'
 slidesurl: ''
 paperurl: 'http://michaelbennington.github.io/files/LM_Neurospheres.pdf'
-citation: '<b>Bennington, M. J.</b> and Webster-Wood, V. A. (2024). &quot;Towards biophysical network simulations of stochastically-formed neurospheres&quot; <i>In: Szczecinski, N.S., Webster-Wood, V., Tresch, M., Nourse, W.R.P., Mura, A., Quinn, R.D. (eds) Biomimetic and Biohybrid Systems. Living Machines 2024. Lecture Notes in Computer Science()</i>, vol 14930. Springer, Cham. https://doi.org/10.1007/978-3-031-72597-5_2'
+citation: '<b>Bennington, M. J.</b> and Webster-Wood, V. A. (2024). &quot;Towards biophysical network simulations of stochastically-formed neurospheres&quot; <i>In: Szczecinski, N.S., Webster-Wood, V., Tresch, M., Nourse, W.R.P., Mura, A., Quinn, R.D. (eds) Biomimetic and Biohybrid Systems. Living Machines 2024. Lecture Notes in Computer Science()</i>, vol 14930. Springer, Cham. [doi: 10.1007/978-3-031-72597-5_2](https://doi.org/10.1007/978-3-031-72597-5_2).'
 image: '/files/graphical abstracts/LM_Neurospheres.png'
 ---
 <b> M. J. Bennington</b><SUP>1+</SUP>, V. A. Webster-Wood<SUP>1,2,3,4</SUP>

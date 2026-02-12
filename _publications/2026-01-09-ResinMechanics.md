@@ -1,14 +1,14 @@
 ---
-title: "Impacts of sterilization method on material properties of 3D printable resins with prolonged exposure to cell culture environments (<i>Under revision</i>)"
+title: "Impacts of sterilization method on material properties of 3D printable resins with prolonged exposure to cell culture environments"
 collection: publications
 category: journal
 permalink: /publication/ResinMechanics
 excerpt: 'The effects of cell culture conditions and physiological salines on the mechanics properties of 3D printed resins.'
-date: 2026-01-09
+date: 2026-02-12
 venue: 'J. Biomechanical Engineering'
 slidesurl: ''
 paperurl: 'http://michaelbennington.github.io/files/ResinMechanics.pdf'
-citation: 'Liao, A. S., et al. &quot;Impacts of sterilization method on material properties of 3D printable resins with prolonged exposure to cell culture environments.&quot; <i>Under Revision</i>. '
+citation: 'Liao, A. S., et al. &quot;Impacts of sterilization method on material properties of 3D printable resins with prolonged exposure to cell culture environments.&quot; <i>J. Biomech. Eng.</i>. [doi:10.1115/1.4071099](https://doi.org/10.1115/1.4071099).'
 image: '/files/graphical abstracts/resin_mechanics.png'
 ---
 
