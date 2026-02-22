@@ -8,7 +8,7 @@ date: 2021-11-01
 venue: 'IEEE Engineering in Medicine and Biology Society (EMBC)'
 slidesurl: ''
 paperurl: 'http://michaelbennington.github.io/files/SensorySubstitution.pdf'
-citation: 'Abdelrahman, Y., <b>Bennington, M. J.</b>, Huberts, J., Sebt, Talwar, et al. (2021). &quot;Sensory Substitution for Tactile Feedback in Upper Limb Prostheses.&quot; <i>IEEE EMBC 2021</i>. 1(1). [doi: 10.1109/EMBC46164.2021.9629539](https://ieeexplore.ieee.org/abstract/document/9629539)'
+citation: 'Abdelrahman, Y., <b>Bennington, M. J.</b>, Huberts, J., Sebt, Talwar, et al. (2021). &quot;Sensory Substitution for Tactile Feedback in Upper Limb Prostheses.&quot; <i>IEEE EMBC 2021</i>. 1(1). <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/abstract/document/9629539">doi: 10.1109/EMBC46164.2021.9629539</a>'
 image: '/files/graphical abstracts/sensory_substitution.png'
 ---
 

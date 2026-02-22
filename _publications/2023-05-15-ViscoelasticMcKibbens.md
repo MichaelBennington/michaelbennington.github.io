@@ -7,8 +7,8 @@ excerpt: 'The dynamical properties of McKibben artificial muscles are augmented 
 date: 2023-05-15
 venue: 'IEEE International Conference on Soft Robotics (RoboSoft 2023)'
 slidesurl: ''
-paperurl: 'http://michaelbennington.github.io/files/ViscoelasticMcKibben.pdf'
-citation: '<b>Bennington, M. J.</b>, Wang, T., et al., &quot;Design and Characterization of Viscoelastic McKibben Actuators with Tunable Force-Velocity Curves,&quot; <i>2023 IEEE International Conference on Soft Robotics (RoboSoft) </i>, Singapore, Singapore, 2023, pp. 1-7, [doi: 10.1109/RoboSoft55895.2023.10122014](https://ieeexplore.ieee.org/document/10122014).'
+paperurl: 'http://michaelbennington.github.io/files/ViscoelasticMcKibbens.pdf'
+citation: '<b>Bennington, M. J.</b>, Wang, T., et al., &quot;Design and Characterization of Viscoelastic McKibben Actuators with Tunable Force-Velocity Curves,&quot; <i>2023 IEEE International Conference on Soft Robotics (RoboSoft) </i>, Singapore, Singapore, 2023, pp. 1-7, <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/document/10122014">doi: 10.1109/RoboSoft55895.2023.10122014</a>.'
 image: '/files/graphical abstracts/viscoelastic_mckibben.png'
 ---
 
