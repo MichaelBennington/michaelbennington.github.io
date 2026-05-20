@@ -33,7 +33,7 @@ Group by the first category (or 'uncategorized' if none)
 {% endcomment %}
 {% assign groups = pubs | group_by_exp: "pub", "pub.categories | first | default: 'uncategorized'" %}
 
-{% assign category_order = "featured,journal,conference,workshop,preprint,book,thesis,uncategorized" | split: "," %}
+{% assign category_order = "featured,journal,preprint,conference,workshop,book,thesis,uncategorized" | split: "," %}
 {% assign ordered_groups = "" | split: "" %}
 {% for wanted in category_order %}
   {% for g in groups %}
