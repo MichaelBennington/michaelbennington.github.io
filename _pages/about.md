@@ -29,8 +29,6 @@ layout: archive
 
 </div>
 
-<b>As I approach the end of my PhD program, I am looking for opportunities to continue my research career as a post-doctoral fellow or tenure track faculty member. </b>
-
 I graduated from the University of California, San Diego with a B.S. in Bioengineering. During my degree, I conducted research under the guidance of Dr. Daniela Valdez-Jasso. In the DVJ Lab, my work focused on the mechanical testing and constitutive model of the right ventricular myocardium and extracellular matrix in a rat model of pulmonary hypertension.
 
 
