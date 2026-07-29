@@ -60,7 +60,22 @@ Group by the first category (or 'uncategorized' if none)
   <div class="pub-grid">
     {% for pub in group.items %}
       <a class="pub-card" href="{{ pub.url | default: pub.url | relative_url }}">
-        <div class="pub-card-image">
+        <!-- <div class="pub-card-image">
+          {% if pub.image %}
+            <img src="{{ pub.image | relative_url }}" alt="{{ pub.title | escape }}">
+          {% else %}
+            <div class="pub-card-placeholder">No image</div>
+          {% endif %}
+        </div> -->
+        <div
+          class="pub-card-image"
+          style="background-color: 
+          {% if pub.image_bg == 'black' %}
+            #000000
+          {% else %}
+            #ffffff
+          {% endif %};"
+          
           {% if pub.image %}
             <img src="{{ pub.image | relative_url }}" alt="{{ pub.title | escape }}">
           {% else %}
