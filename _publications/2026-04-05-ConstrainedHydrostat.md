@@ -9,6 +9,7 @@ venue: 'bioRxiv'
 slidesurl: ''
 paperurl: 'http://michaelbennington.github.io/files/ConstrainedHydrostats.pdf'
 citation: 'Bennington, M.J. <i>et al.</i>. &quot;Context-dependent mechanical reconfiguration is necessary for multifunctional behavior in a constrained hydrostat.&quot; <i>bioRxiv</i>. <a target="_blank" rel="noopener noreferrer" href="https://www.biorxiv.org/content/10.64898/2026.04.01.715937v1">doi: 10.64898/2026.04.01.715937</a>.'
+image_bg: 'black'
 image: '/files/graphical abstracts/constrained-hydrostat.png'
 ---
 <b> M. J. Bennington</b><SUP>1</SUP>, S. M. Rogers<SUP>6,7</SUP>, D. M. Neustadter<SUP>8</SUP>, R. D. Quinn<SUP>9</SUP>,  G. P. Sutton<SUP>7</SUP>, H. J. Chiel<SUP>10,11,12</SUP>, V. A. Webster-Wood<SUP>1,2,3,4,5</SUP>
